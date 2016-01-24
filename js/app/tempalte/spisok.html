@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="listen">
+            <p class="title">Список желаемого</p>
+            <ul>
+                <li data-ng-repeat="list in model.lists">
+                    {{list.name}} <span data-ng-click="removeCar($index)"></span>
+                </li>
+            </ul>
+            <p class="summ">Сумма: <span>{{summ()}}</span> руб.</p>
+
+            <p class="del" data-ng-click="removeAllCar()">Очистить список</p>
+        </div>
+    </div>
+</div>

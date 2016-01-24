@@ -1,0 +1,16 @@
+<div class="container game__con">
+    <div class="row">
+        <div class="col-md-3 game__rep" data-ng-repeat="game in model.games"
+             data-ng-class="{last : ((($index + 1) % 4) === 0)}">
+            <img class="img-responsive" data-ng-src="{{::game.cover}}" alt=""/>
+
+            <p data-ng-if="setCar($index) === 'noCar'" data-ng-click="addCar($index)" class="game__car-off">Добавить</p>
+
+            <p data-ng-if="setCar($index) === 'yesCar'" class="game__car-on">В списке</p>
+
+            <p data-ng-bind-html="::getTitleGames(game.name)" class="title"></p>
+
+            <p class="price">{{::game.price}} .руб</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,139 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #5a5a5a;
+}
+
+.container.app__con {
+    width: 900px;
+    margin-top: 90px;
+}
+
+.spisok__con .container {
+    width: 100%;
+}
+
+.col-md-8.catalog__con {
+    width: 630px;
+}
+
+.col-md-4.spisok__con {
+    width: 270px;
+    padding-left: 20px;
+}
+
+.container.game__con {
+    width: 100%;
+}
+
+.game__rep img {
+    /*height: 210px;*/
+    width: 100%;
+}
+
+.game__rep p {
+    text-align: center;
+    margin-bottom: 0;
+
+}
+
+.col-md-3.game__rep {
+    min-height: 325px;
+    width: 146px;
+    margin-right: 15px;
+}
+.col-md-3.game__rep.last{
+    margin-right: 0;
+}
+
+.listen {
+    background-color: #3c3d3d;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-top: 10px solid #60ccff;
+    color: #fff;
+    min-height: 400px;
+}
+
+.summ {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.summ span {
+    color: #60ccff;
+}
+
+.listen ul {
+    padding: 0;
+    margin: 0;
+}
+
+.listen li {
+    list-style: none;
+    position: relative;
+    padding: 7px 55px 7px 5px;
+}
+
+.listen li span {
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    display: none;
+    background: url("/css/img/9161.png");
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.listen li:hover {
+    background: #575757;
+}
+
+.listen li:hover span {
+    display: inline-block;
+}
+
+.summ,
+.del {
+    padding-left: 5px;
+}
+
+.listen .title {
+    font-size: 24px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.del {
+    font-size: 12px;
+    color: rgb(96, 204, 255);
+    text-decoration: underline;
+    line-height: 1.2;
+    cursor: pointer;
+}
+
+.game__car-off {
+    font-size: 16px;
+    color: rgb(96, 204, 255);
+    cursor: pointer;
+}
+
+.game__car-on {
+    font-size: 16px;
+    color: rgb(108, 254, 145);
+}
+
+.game__car-on,
+.game__car-off {
+    background-color: rgb(60, 61, 61);
+    line-height: 30px;
+    /*line-height: 1.625;*/
+}
+.game__con .title{
+    color: #fff;
+}
+.game__con .price {
+    color: #9a9a9a;
+}
