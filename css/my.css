@@ -3,17 +3,16 @@ body {
     background-color: #5a5a5a;
 }
 
+.col-md-3 {
+    float: left;
+}
 .container.app__con {
-    width: 900px;
+    /*width: 900px;*/
     margin-top: 90px;
 }
 
 .spisok__con .container {
     width: 100%;
-}
-
-.col-md-8.catalog__con {
-    width: 630px;
 }
 
 .col-md-4.spisok__con {
@@ -136,4 +135,49 @@ body {
 }
 .game__con .price {
     color: #9a9a9a;
+}
+
+@media (min-width: 917px){
+    .container.app__con {
+        width: 900px;
+    }
+
+    .col-md-8.catalog__con {
+        width: 630px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 917px){
+    .col-sm-8 {
+        width: 483px;
+    }
+    .col-md-4.spisok__con{
+        padding-left: 0;
+        width: 235px;
+    }
+    .col-md-3.game__rep.last {
+        margin-right: 15px;
+    }
+
+}
+@media (max-width: 499px){
+
+    .col-md-3.game__rep.last {
+        margin-right: 0;
+    }
+    .col-md-3.game__rep {
+        width: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0;
+        min-height: 290px;
+    }
+    .col-md-3.game__rep {
+         min-height: 400px;
+     }
+}
+@media (max-width: 917px){
+    .col-md-3.game__rep.last {
+        margin-right: 15px;
+    }
 }
